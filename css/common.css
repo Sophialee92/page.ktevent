@@ -1,0 +1,324 @@
+@charset "utf-8"; /* 문자 코드 셋 지정(한글 깨짐 방지) */
+
+/* 여백 초기화 */
+body, div, img, h1, h2, h3, h4, h5, h6, p, ol, ul, li{ margin:0; padding:0; }
+
+/* 목록 불릿 없애기 */
+ol,ul { list-style:none; }
+
+/* 하이퍼링크 설정 */
+a:link, a:visited, a:hover, a:active { text-decoration:none; color:#000; }
+
+/* 
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ */
+ /*  
+@font-face {
+	font-family: 'squ';
+	src:url('../font/NanumSquareR.eot');
+	src:url('../font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+	url('../font/NanumSquareR.woff') format('woff'),
+	url('../font/NanumSquareR.ttf') format('truetype');
+	src:local(※), url('../font/NanumSquareR.woff') format('woff');
+ }
+*/
+ @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+            
+body { 
+	font-family:'NanumSquareRound', sans-serif; 
+	font-size:1em; color:#000; 
+	line-height:175%; 
+}
+.clear{ clear: both; }
+table,th,td {
+	border-collapse: collapse;
+}
+
+            
+.contwrap {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* contents1 */
+#contents1 {
+	margin: 0 auto;
+    text-align: center;
+}
+#contents1 .title {
+	width:100%;
+	margin-bottom: 1.2%;
+}
+
+/* contents2 */
+#contents2 {
+	width: 100%;
+}
+.star1, .star1_model {
+	/*font-family: 'BMJUA';*/
+	margin-bottom: 0.7em;
+	font-size: 200%;
+	text-align: center;
+	line-height: 160%;
+}
+#contents2 .table_layout {
+	width: 94%;
+	margin: 0 auto;
+	margin-bottom: 0.5em;
+}
+#contents2 .table_layout table{
+	width: 100%;
+	text-align: center;
+}
+table{	
+	border: 1px solid #999;
+}
+th{
+	background-color: #999;
+}
+.contents2_th1{
+	font-size: 200%;
+	padding: 3% 0;
+	color: #fff
+}
+.contents2_th2{
+	font-size: 160%;
+	padding: 2.5% 0;
+	color: #fff;
+}
+.contents2_td1{
+	font-size: 160%;
+	padding: 2% 0;
+}
+.contents2_td2{
+	font-size: 160%;
+	padding: 4% 0;
+}
+caption{
+	font-size: 130%;
+	text-align: right;
+}
+.star1_model{
+	margin-top: 2em;
+}
+
+/* contents3 */
+#contents3_wrap{
+	width: 100%;
+	background: #e0fcfb;
+	padding-bottom: 1.5em;
+	margin-bottom: 2em;
+	box-sizing: border-box;
+}
+#contents3{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1.5em;
+}
+#contents3 .phone_top, #contents3 .phone_bottom{ 
+	width: 94%;
+	margin: 0 auto;
+}
+#contents3 ul .phone_top_li{
+	display: inline-block;
+	margin-right: 2%;
+	padding: 0.7% 0.7%;
+    width: 23.5%;
+    float: left;
+	background: #fff;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 0.7em;  /* 데두리모서리 */ 
+}
+#contents3 ul .phone_bottom_li{
+	display: inline-block;
+	margin-right: 7.375%;
+	padding: 0.7% 0.7%;
+    width: 23.5%;
+    float: left;
+	background: #fff;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 1.5em;
+	border-radius: 0.7em;  /* 데두리모서리 */
+}
+.phone_top_li:nth-child(4){
+    margin-right: 0 !important;
+}
+.phone_bottom_li:nth-child(3){
+    margin-right: 0 !important;
+}
+.phone_bottom_li:nth-child(1){
+    margin-left: 7.375%;
+}
+#contents3 ul .phone_top_li img, #contents3 ul .phone_bottom_li img{
+	width: 100%;
+}
+.phone_name, .info_top, .info_bottom{
+	margin: 2% 0;
+}
+.phone_name{
+	margin-bottom: 0.5em;
+}
+#contents3 a{
+	display: block;
+	background: blue;
+	color: #fff;
+	width: 50%;
+	margin: 0.8em auto;
+	padding: 0.3em;
+	box-sizing: border-box;
+	border-radius: 0.6em;
+	font-size: 130%;
+}
+span{
+	color: blue;
+}
+.price{
+	color: red;
+	font-weight: 900;
+	font-size: 110%;
+}
+
+/* contents4 */
+#contents4 {
+	width: 100%;
+}
+.star1_bottom {
+	/*font-family: 'BMJUA';*/
+	margin-top: 1.5em;
+	margin-bottom: 0.7em;
+	font-size: 150%;
+}
+.call{
+	margin-top: 1em;
+	text-align: center;
+	font-size: 500%;
+	font-weight: 900;
+	margin-bottom: 1.5em;
+}
+
+/* max-width:1023px은 고정수치라고 생각하기. 1024px부터는 대체로web임 */
+@media screen and (min-width:769px) and (max-width:1023px){
+	#contents1 {
+        width: 100%;
+    }
+    #contents1 .title {
+        width:100%;
+    }
+	#contents2 {
+		width: 100%;
+	}
+	#contents2 .table_layout{
+		width: 91%;
+	}
+    #contents2 .table_layout table{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contents2_th1{
+	font-size: 160%;
+	padding: 2% 0;
+	}
+	.contents2_th2{
+	font-size: 140%;
+	padding: 2% 0;
+	}
+	.contents2_td1{
+	font-size: 140%;
+	padding: 1% 0;
+	}
+	.contents2_td2{
+	font-size: 140%;
+	padding: 4% 0;
+	}
+	.star1, .star1_model {
+		font-size: 160%;
+	}
+	caption{
+		font-size: 100%;
+	}	
+	#contents3 {
+	}
+	#contents3 ul .phone_top_li, #contents3 ul .phone_bottom_li{
+        margin: 1.5%;
+        width: 46%;
+        float: left;
+	}
+	.phone_bottom_li:nth-child(3){
+		width: 46%;
+		float: none;
+		margin: auto 27% !important;
+	}
+	.phone_name{
+		font-size: 160%;
+	}
+	.call{
+		font-size: 400%;
+	}
+}
+@media (max-width:768px){
+	#contents1 {
+        width: 100%;
+    }
+    #contents1 .title {
+        width: 100%;
+    }
+	#contents2 .table_layout{
+		width: 91%;
+	}
+    #contents2 .table_layout table{
+        width: 100%;
+	}
+	.contents2_th1{
+	font-size: 90%;
+	padding: 2% 0;
+	box-sizing: border-box;
+	}
+	.contents2_th2{
+	font-size: 80%;
+	padding: 2% 0;
+	box-sizing: border-box;
+	line-height: 160%;
+	}
+	.contents2_td1{
+	font-size: 110%;
+	padding: 1% 0;
+	box-sizing: border-box;
+	}
+	.contents2_td2{
+	font-size: 85%;
+	padding: 3% 0;
+	box-sizing: border-box;
+	}
+	th, td{
+	box-sizing: border-box;
+	}
+	.star1, .star1_model {
+		font-size: 130%;
+	}
+	caption{
+		font-size: 80%;
+	}	
+	#contents3 ul .phone_top_li, #contents3 ul .phone_bottom_li{
+        margin: 1.5%;
+        width: 97%;
+	}
+	#contents3 ul .phone_top_li{
+        padding: 3% 0.7% 0.7%
+	}
+	.phone_name{
+		font-size: 190%;
+	}
+	.call{
+		font-size: 190%;
+	}
+	.price{
+		font-size: 120%;
+	}
+}
